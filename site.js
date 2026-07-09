@@ -21,17 +21,17 @@
     });
   }
 
-  /* ── Scroll reveal ── */
-  var reveals = document.querySelectorAll('.reveal');
-  if (reveals.length && 'IntersectionObserver' in window) {
+  /* ── Scroll reveal (split panels + .reveal elements) ── */
+  var targets = document.querySelectorAll('.reveal, .split');
+  if (targets.length && 'IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
         if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
-    reveals.forEach(function (el) { io.observe(el); });
+    }, { threshold: 0.15, rootMargin: '0px 0px -6% 0px' });
+    targets.forEach(function (el) { io.observe(el); });
   } else {
-    reveals.forEach(function (el) { el.classList.add('in'); });
+    targets.forEach(function (el) { el.classList.add('in'); });
   }
 
   /* ── Gallery lightbox ── */

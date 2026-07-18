@@ -1,0 +1,7 @@
+{
+  "name": "renegade-fitness",
+  "private": true,
+  "scripts": {
+    "dev": "npx -y browser-sync start --server . --port 8080 --files \"*.html\" \"styles.css\" \"site.js\" \"assets/**\" --extensions html --no-open --no-ui --no-notify"
+  }
+}

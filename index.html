@@ -6,131 +6,496 @@
 <title>Renegade Fitness | 24/7 Gym in Wauconda, IL</title>
 <meta name="description" content="Renegade Fitness is Wauconda's 24/7, no-contract fitness center — state-of-the-art equipment, certified personal trainers, group classes, and a clean, welcoming facility.">
 <link rel="canonical" href="https://renegadefitness.vercel.app/">
-<meta property="og:title" content="Renegade Fitness | 24/7 Gym in Wauconda, IL"><meta property="og:description" content="Renegade Fitness is Wauconda's 24/7, no-contract fitness center — state-of-the-art equipment, certified personal trainers, group classes, and a clean, welcoming facility.">
-<meta property="og:type" content="website"><meta property="og:image" content="/assets/og.jpg">
-<meta name="theme-color" content="#0b0c10">
+<meta property="og:title" content="Renegade Fitness | 24/7 Gym in Wauconda, IL">
+<meta property="og:description" content="Renegade Fitness is Wauconda's 24/7, no-contract fitness center — state-of-the-art equipment, certified personal trainers, group classes, and a clean, welcoming facility.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/assets/og.jpg">
+<meta name="theme-color" content="#131519">
 <link rel="icon" type="image/png" href="/assets/logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Saira:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800;1,900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
+<script src="/site.js" defer></script>
 </head>
 <body>
-<header class="site-header">
-  <div class="nav">
-    <a href="/" class="brand" aria-label="Renegade Fitness home"><img src="/assets/logo.png" alt="Renegade Fitness — Wauconda, IL"></a>
-    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="nav-links">
-      <a href="/" class="active">Home</a><a href="/about">About</a><a href="/services">Services</a>
-      <a href="/membership">Membership</a><a href="/#gallery">Gallery</a><a href="/contact">Contact</a>
-      <a href="/membership" class="mobile-join btn btn-primary">Join Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-    </nav>
-    <div class="nav-right"><a href="tel:8474698139" class="nav-phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(847) 469-8139</a><a href="/membership" class="btn btn-primary">Join Now</a></div>
+<a class="skip-link" href="#top">Skip to content</a>
+
+<!-- ============ nav ============ -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="/" aria-label="Renegade Fitness home">
+      <img class="brand-logo" src="/assets/logo.png" alt="Renegade Fitness">
+    </a>
+    <ul class="nav-links">
+      <li><a href="/" class="active">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/membership">Membership</a></li>
+      <li><a href="/gallery">Gallery</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:8474698139">(847) 469-8139</a>
+      <a class="btn btn-primary" href="/membership">Join Now</a>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mmenu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
   </div>
+  <nav class="mobile-menu" id="mmenu">
+    <ul>
+      <li><a href="/" class="active">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/membership">Membership</a></li>
+      <li><a href="/gallery">Gallery</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+    <div class="mm-cta"><a class="btn btn-primary" href="/membership">Join Now</a></div>
+  </nav>
 </header>
-<section class="split hero bg-ink">
-  <div class="sp-content on-dark">
-    <span class="kicker">Wauconda&rsquo;s 24/7 Fitness Center</span>
-    <h1 class="lead">Change<br>Your <span class="hl">Life.</span></h1>
-    <p class="body">A state-of-the-art, no-contract gym with certified coaches, clean equipment, and a community that pushes each other. Every level welcome.</p>
-    <div class="sp-actions"><a href="/membership" class="btn btn-primary btn-lg">Join Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a><a href="/contact" class="btn btn-ghost btn-lg">Book a Free Tour</a></div>
-    <div class="hero-facts">
-      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span><b>Open 24/7</b><span>On your schedule</span></span></div>
-      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>No Contract</b><span>Cancel anytime</span></span></div>
-      <div><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span><b>4.8&#9733; Rated</b><span>On Google</span></span></div>
+
+<!-- ============ hero ============ -->
+<section class="hero" id="top">
+  <div class="container">
+    <span class="eyebrow">24/7 Gym · Wauconda, IL</span>
+    <h1 class="hero-display">CHANGE YOUR <span class="hl">LIFE.</span></h1>
+    <div class="hero-row">
+      <p class="lead">Renegade Fitness is Wauconda's 24/7 gym — round-the-clock key-fob access to a clean, fully equipped floor with free weights, plate-loaded rigs, and a turf sprint track, plus five expert coaches when you want the extra push.</p>
+      <div class="hero-side">
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/membership">View Memberships
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a class="btn btn-secondary" href="/contact">Book a Tour</a>
+        </div>
+        <div class="hero-chips">
+          <span class="chip"><svg class="star" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>4.8 on Google</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Open 24/7</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>No Contracts</span>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="sp-media"><img src="/assets/hero-bg.jpg" alt="Inside Renegade Fitness"></div>
 </section>
-<section class="split flip bg-grey ">
-  <div class="sp-content"><span class="kicker">Who We Are</span>
-      <h2 class="lead">Not Your<br>Average <span class="hl">Gym.</span></h2>
-      <p class="body">Our mission is simple: help you maintain an active lifestyle doing what you enjoy. We built a high-performance facility that serves competitive athletes and first-time members alike — without the contracts, crowds, or intimidation.</p>
-      <ul class="check-list">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Clean &amp; well-maintained</b> — the #1 thing members mention in reviews.</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Certified, invested coaches</b> who build a plan around you.</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>No contracts, no hidden fees</b> — month to month.</span></li>
-      </ul>
-      <div class="sp-actions"><a href="/about" class="btn btn-navy">Meet The Team <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div>
-  <div class="sp-media"><img src="/assets/gallery/g13.jpg" alt="Member training at Renegade Fitness" loading="lazy"><span class="sp-tag">Est. Wauconda</span></div>
-</section>
-<section class="split svc-split flip bg-char">
-  <div class="sp-content on-dark">
-    <span class="kicker">What We Offer</span>
-    <h2 class="lead" style="margin:1.1rem 0 1.5rem">Everything You<br>Need To <span class="hl">Train.</span></h2>
-    <div class="svc-list" style="padding:0"><div class="svc-item"><div class="svc-head"><span class="n">01</span><h3>24/7 Gym Access</h3></div><p>Free weights, cable machines, plate-loaded rigs, a full cardio floor, and a turf sprint track — open every hour of every day with your own key fob.</p><div class="tags"><span>Free Weights</span><span>Cardio</span><span>Turf Track</span></div></div><div class="svc-item"><div class="svc-head"><span class="n">02</span><h3>Personal Training</h3></div><p>One-on-one coaching with certified trainers who build a plan around your body, your goals, and your schedule — then keep you accountable.</p><div class="tags"><span>1-on-1</span><span>Custom Plans</span></div></div><div class="svc-item"><div class="svc-head"><span class="n">03</span><h3>Group Fitness Classes</h3></div><p>High-energy group sessions several times a week. Train harder with people pushing right beside you, led by our coaches.</p><div class="tags"><span>Weekly</span><span>All Levels</span></div></div><div class="svc-item"><div class="svc-head"><span class="n">04</span><h3>Spin &amp; Cardio</h3></div><p>A dedicated spin room plus a full cardio floor to build your engine and torch calories on your own schedule.</p><div class="tags"><span>Spin Room</span><span>Cardio</span></div></div><div class="svc-item"><div class="svc-head"><span class="n">05</span><h3>Nutrition Coaching</h3></div><p>Certified nutrition coaching to fuel your training and make your results stick long after you leave the gym.</p><div class="tags"><span>NASM CNC</span></div></div><div class="svc-item"><div class="svc-head"><span class="n">06</span><h3>Specialty Coaching</h3></div><p>Physique &amp; bodybuilding prep, 40+ and senior strength, pre/postnatal, corrective exercise, and weight-loss coaching.</p><div class="tags"><span>Physique</span><span>40+ / Seniors</span></div></div></div>
-    <div class="sp-actions"><a href="/services" class="btn btn-primary">All Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+
+<!-- ============ stats ============ -->
+<div class="stats">
+  <svg class="stats-brush" viewBox="0 0 1440 150" preserveAspectRatio="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><mask id="statsBrushMask"><rect x="-30" y="0" width="1500" height="400" fill="#fff"/><rect x="1318.2" y="82.0" width="162.7" height="2.3" rx="1.5" fill="#000" opacity="0.89"/><rect x="604.5" y="59.1" width="113.2" height="2.7" rx="1.5" fill="#000" opacity="0.92"/><rect x="1311.1" y="94.9" width="65.6" height="1.9" rx="1.5" fill="#000" opacity="0.72"/><rect x="412.8" y="115.3" width="105.5" height="1.2" rx="1.5" fill="#000" opacity="0.56"/><rect x="611.9" y="88.4" width="43.0" height="2.9" rx="1.5" fill="#000" opacity="0.57"/><rect x="678.5" y="123.8" width="67.7" height="2.2" rx="1.5" fill="#000" opacity="0.51"/><rect x="835.3" y="86.9" width="146.6" height="1.2" rx="1.5" fill="#000" opacity="0.87"/><rect x="1136.0" y="63.5" width="125.4" height="1.1" rx="1.5" fill="#000" opacity="0.89"/><rect x="1437.6" y="80.3" width="103.0" height="1.1" rx="1.5" fill="#000" opacity="0.66"/><rect x="922.8" y="114.0" width="121.1" height="2.7" rx="1.5" fill="#000" opacity="0.57"/><rect x="1320.3" y="81.8" width="38.9" height="2.5" rx="1.5" fill="#000" opacity="0.91"/><rect x="888.7" y="89.5" width="19.2" height="1.3" rx="1.5" fill="#000" opacity="0.83"/><rect x="64.0" y="95.1" width="105.8" height="2.8" rx="1.5" fill="#000" opacity="0.85"/><rect x="610.2" y="121.6" width="44.1" height="2.4" rx="1.5" fill="#000" opacity="0.53"/><rect x="526.3" y="68.2" width="20.4" height="2.7" rx="1.5" fill="#000" opacity="0.80"/><rect x="718.5" y="54.4" width="169.7" height="2.3" rx="1.5" fill="#000" opacity="0.91"/><rect x="785.4" y="98.7" width="47.3" height="2.8" rx="1.5" fill="#000" opacity="0.73"/><rect x="322.3" y="96.4" width="68.3" height="2.8" rx="1.5" fill="#000" opacity="0.79"/><rect x="936.3" y="56.1" width="27.6" height="2.6" rx="1.5" fill="#000" opacity="0.90"/><rect x="847.2" y="84.2" width="54.5" height="3.1" rx="1.5" fill="#000" opacity="0.92"/><rect x="1142.8" y="94.2" width="16.4" height="2.7" rx="1.5" fill="#000" opacity="0.80"/><rect x="1370.0" y="81.8" width="131.4" height="1.5" rx="1.5" fill="#000" opacity="0.92"/><rect x="951.0" y="55.0" width="154.9" height="1.3" rx="1.5" fill="#000" opacity="0.91"/><rect x="323.1" y="103.4" width="58.5" height="2.5" rx="1.5" fill="#000" opacity="0.72"/><rect x="179.2" y="90.2" width="148.9" height="2.6" rx="1.5" fill="#000" opacity="0.86"/><rect x="1223.3" y="113.8" width="72.8" height="2.4" rx="1.5" fill="#000" opacity="0.60"/><rect x="557.4" y="72.8" width="25.6" height="1.1" rx="1.5" fill="#000" opacity="0.76"/><rect x="1278.3" y="91.1" width="95.0" height="2.8" rx="1.5" fill="#000" opacity="0.90"/><rect x="1279.1" y="76.8" width="120.9" height="2.0" rx="1.5" fill="#000" opacity="0.92"/><rect x="205.8" y="96.8" width="36.8" height="1.9" rx="1.5" fill="#000" opacity="0.81"/><rect x="202.1" y="67.3" width="53.5" height="1.7" rx="1.5" fill="#000" opacity="0.85"/><rect x="323.3" y="81.9" width="95.8" height="1.1" rx="1.5" fill="#000" opacity="0.91"/><rect x="1349.4" y="126.9" width="81.2" height="2.6" rx="1.5" fill="#000" opacity="0.49"/><rect x="152.2" y="66.9" width="116.3" height="1.7" rx="1.5" fill="#000" opacity="0.81"/><rect x="218.3" y="78.3" width="38.2" height="1.1" rx="1.5" fill="#000" opacity="0.69"/><rect x="565.6" y="90.2" width="178.0" height="1.9" rx="1.5" fill="#000" opacity="0.89"/><rect x="393.4" y="81.9" width="134.3" height="2.7" rx="1.5" fill="#000" opacity="0.87"/><rect x="961.4" y="80.0" width="174.5" height="2.6" rx="1.5" fill="#000" opacity="0.91"/><rect x="-10.8" y="63.5" width="21.8" height="2.9" rx="1.5" fill="#000" opacity="0.83"/><rect x="780.7" y="97.4" width="171.0" height="2.2" rx="1.5" fill="#000" opacity="0.84"/><rect x="84.0" y="92.6" width="160.0" height="2.2" rx="1.5" fill="#000" opacity="0.86"/><rect x="335.5" y="132.6" width="13.2" height="2.0" rx="1.5" fill="#000" opacity="0.48"/><rect x="574.9" y="79.3" width="66.3" height="1.1" rx="1.5" fill="#000" opacity="0.92"/><rect x="241.9" y="54.5" width="101.5" height="2.0" rx="1.5" fill="#000" opacity="0.92"/><rect x="438.3" y="101.3" width="27.9" height="2.3" rx="1.5" fill="#000" opacity="0.78"/><rect x="1230.9" y="98.3" width="31.0" height="1.0" rx="1.5" fill="#000" opacity="0.50"/><rect x="814.3" y="88.7" width="68.2" height="2.5" rx="1.5" fill="#000" opacity="0.77"/><rect x="429.1" y="84.3" width="69.4" height="3.0" rx="1.5" fill="#000" opacity="0.66"/><rect x="435.1" y="87.1" width="27.8" height="2.9" rx="1.5" fill="#000" opacity="0.89"/><rect x="169.5" y="115.6" width="19.1" height="1.6" rx="1.5" fill="#000" opacity="0.58"/><rect x="822.4" y="82.2" width="55.7" height="1.1" rx="1.5" fill="#000" opacity="0.92"/><rect x="271.8" y="113.5" width="48.9" height="1.9" rx="1.5" fill="#000" opacity="0.67"/><rect x="438.3" y="83.0" width="143.3" height="2.3" rx="1.5" fill="#000" opacity="0.92"/><rect x="1089.2" y="92.7" width="71.8" height="2.1" rx="1.5" fill="#000" opacity="0.52"/><rect x="1374.0" y="85.9" width="97.4" height="2.7" rx="1.5" fill="#000" opacity="0.59"/><rect x="538.3" y="64.3" width="34.7" height="1.2" rx="1.5" fill="#000" opacity="0.88"/><rect x="966.8" y="80.8" width="62.0" height="1.2" rx="1.5" fill="#000" opacity="0.91"/><rect x="20.1" y="90.8" width="16.2" height="1.3" rx="1.5" fill="#000" opacity="0.63"/><rect x="1365.9" y="67.1" width="112.6" height="1.6" rx="1.5" fill="#000" opacity="0.86"/><rect x="462.3" y="93.3" width="14.1" height="2.4" rx="1.5" fill="#000" opacity="0.83"/><rect x="119.1" y="89.6" width="72.6" height="1.4" rx="1.5" fill="#000" opacity="0.58"/><rect x="1350.3" y="105.2" width="116.7" height="1.3" rx="1.5" fill="#000" opacity="0.67"/><rect x="653.1" y="62.8" width="84.6" height="2.1" rx="1.5" fill="#000" opacity="0.87"/><rect x="757.6" y="85.8" width="133.1" height="2.4" rx="1.5" fill="#000" opacity="0.63"/><rect x="592.4" y="61.3" width="22.2" height="3.3" rx="1.5" fill="#000" opacity="0.91"/><rect x="683.7" y="58.6" width="166.4" height="1.9" rx="1.5" fill="#000" opacity="0.92"/><rect x="273.7" y="82.4" width="108.6" height="1.9" rx="1.5" fill="#000" opacity="0.90"/><rect x="493.6" y="106.9" width="41.9" height="3.4" rx="1.5" fill="#000" opacity="0.64"/><rect x="882.5" y="96.2" width="56.3" height="1.3" rx="1.5" fill="#000" opacity="0.57"/><rect x="35.1" y="108.1" width="29.3" height="1.2" rx="1.5" fill="#000" opacity="0.57"/><rect x="271.0" y="84.5" width="116.2" height="1.8" rx="1.5" fill="#000" opacity="0.66"/><rect x="889.7" y="83.9" width="120.0" height="1.9" rx="1.5" fill="#000" opacity="0.69"/><rect x="836.5" y="69.7" width="45.3" height="1.9" rx="1.5" fill="#000" opacity="0.92"/><rect x="435.6" y="94.1" width="76.1" height="2.1" rx="1.5" fill="#000" opacity="0.87"/><rect x="1414.3" y="108.5" width="120.1" height="3.2" rx="1.5" fill="#000" opacity="0.67"/><rect x="763.6" y="76.6" width="118.8" height="1.9" rx="1.5" fill="#000" opacity="0.68"/><rect x="742.4" y="70.4" width="52.6" height="1.2" rx="1.5" fill="#000" opacity="0.74"/><rect x="827.4" y="84.3" width="144.7" height="2.7" rx="1.5" fill="#000" opacity="0.92"/><rect x="380.9" y="61.5" width="131.8" height="1.2" rx="1.5" fill="#000" opacity="0.87"/><rect x="1377.1" y="81.0" width="125.5" height="2.7" rx="1.5" fill="#000" opacity="0.64"/><rect x="872.0" y="91.4" width="33.7" height="2.2" rx="1.5" fill="#000" opacity="0.57"/><rect x="1403.0" y="118.8" width="68.4" height="1.9" rx="1.5" fill="#000" opacity="0.52"/><rect x="240.1" y="84.0" width="126.7" height="3.2" rx="1.5" fill="#000" opacity="0.92"/><rect x="544.5" y="95.9" width="20.0" height="2.7" rx="1.5" fill="#000" opacity="0.51"/><rect x="526.1" y="69.9" width="144.0" height="1.5" rx="1.5" fill="#000" opacity="0.77"/><rect x="888.4" y="84.3" width="162.0" height="1.4" rx="1.5" fill="#000" opacity="0.87"/><rect x="308.0" y="78.3" width="19.7" height="2.4" rx="1.5" fill="#000" opacity="0.72"/><rect x="1042.9" y="94.4" width="58.8" height="2.0" rx="1.5" fill="#000" opacity="0.58"/><rect x="421.4" y="72.5" width="54.1" height="2.5" rx="1.5" fill="#000" opacity="0.78"/><rect x="24.5" y="126.1" width="19.2" height="2.4" rx="1.5" fill="#000" opacity="0.45"/><rect x="257.8" y="97.7" width="97.2" height="2.6" rx="1.5" fill="#000" opacity="0.74"/><rect x="69.6" y="79.4" width="76.3" height="3.0" rx="1.5" fill="#000" opacity="0.68"/><rect x="1221.5" y="128.2" width="73.1" height="3.2" rx="1.5" fill="#000" opacity="0.46"/><rect x="1207.5" y="56.1" width="93.8" height="1.2" rx="1.5" fill="#000" opacity="0.89"/><rect x="115.5" y="83.1" width="38.9" height="2.5" rx="1.5" fill="#000" opacity="0.90"/><rect x="1054.9" y="58.3" width="154.3" height="2.9" rx="1.5" fill="#000" opacity="0.91"/><rect x="1377.1" y="82.6" width="93.7" height="3.3" rx="1.5" fill="#000" opacity="0.67"/><rect x="74.1" y="86.2" width="48.8" height="1.9" rx="1.5" fill="#000" opacity="0.91"/><rect x="1064.7" y="63.3" width="25.1" height="2.0" rx="1.5" fill="#000" opacity="0.81"/><rect x="151.6" y="99.0" width="101.3" height="1.9" rx="1.5" fill="#000" opacity="0.77"/><rect x="1385.5" y="96.0" width="139.7" height="1.2" rx="1.5" fill="#000" opacity="0.69"/><rect x="412.1" y="83.9" width="24.7" height="2.1" rx="1.5" fill="#000" opacity="0.63"/><rect x="1320.9" y="62.4" width="75.1" height="1.7" rx="1.5" fill="#000" opacity="0.86"/><rect x="1131.9" y="65.9" width="100.4" height="1.7" rx="1.5" fill="#000" opacity="0.80"/><rect x="738.1" y="66.6" width="20.8" height="2.0" rx="1.5" fill="#000" opacity="0.86"/><rect x="87.1" y="55.4" width="58.8" height="1.2" rx="1.5" fill="#000" opacity="0.89"/><rect x="770.4" y="65.4" width="72.0" height="3.2" rx="1.5" fill="#000" opacity="0.81"/><rect x="1163.7" y="84.4" width="14.0" height="2.8" rx="1.5" fill="#000" opacity="0.92"/><rect x="346.2" y="95.4" width="87.3" height="1.9" rx="1.5" fill="#000" opacity="0.85"/><rect x="299.1" y="102.1" width="160.4" height="2.1" rx="1.5" fill="#000" opacity="0.79"/><rect x="387.6" y="98.2" width="161.0" height="2.6" rx="1.5" fill="#000" opacity="0.81"/><rect x="553.4" y="101.7" width="131.1" height="2.0" rx="1.5" fill="#000" opacity="0.79"/><rect x="921.9" y="76.2" width="103.9" height="1.1" rx="1.5" fill="#000" opacity="0.74"/><rect x="583.4" y="58.6" width="165.1" height="3.0" rx="1.5" fill="#000" opacity="0.92"/><rect x="1438.6" y="126.1" width="89.6" height="3.1" rx="1.5" fill="#000" opacity="0.50"/><rect x="596.3" y="60.4" width="180.3" height="3.4" rx="1.5" fill="#000" opacity="0.91"/><rect x="375.5" y="84.8" width="92.8" height="1.7" rx="1.5" fill="#000" opacity="0.90"/><rect x="227.1" y="106.2" width="74.0" height="1.2" rx="1.5" fill="#000" opacity="0.70"/><rect x="1272.6" y="66.2" width="44.2" height="1.0" rx="1.5" fill="#000" opacity="0.85"/><rect x="854.4" y="89.2" width="25.4" height="1.6" rx="1.5" fill="#000" opacity="0.58"/><rect x="25.4" y="98.6" width="27.9" height="2.0" rx="1.5" fill="#000" opacity="0.50"/><rect x="524.5" y="61.0" width="143.1" height="1.4" rx="1.5" fill="#000" opacity="0.88"/><rect x="1004.9" y="67.7" width="25.3" height="1.3" rx="1.5" fill="#000" opacity="0.79"/><rect x="518.3" y="104.9" width="78.1" height="2.4" rx="1.5" fill="#000" opacity="0.71"/><rect x="810.3" y="125.4" width="33.9" height="2.3" rx="1.5" fill="#000" opacity="0.45"/><rect x="682.5" y="109.8" width="102.8" height="1.0" rx="1.5" fill="#000" opacity="0.65"/><rect x="716.1" y="112.4" width="87.1" height="2.9" rx="1.5" fill="#000" opacity="0.62"/><rect x="35.9" y="71.9" width="80.1" height="1.8" rx="1.5" fill="#000" opacity="0.92"/><rect x="637.0" y="81.2" width="127.0" height="3.2" rx="1.5" fill="#000" opacity="0.92"/><rect x="1021.2" y="73.2" width="165.1" height="3.3" rx="1.5" fill="#000" opacity="0.85"/><rect x="223.3" y="130.2" width="97.4" height="1.2" rx="1.5" fill="#000" opacity="0.43"/><rect x="752.0" y="66.2" width="73.4" height="3.2" rx="1.5" fill="#000" opacity="0.82"/><rect x="1191.3" y="67.0" width="35.7" height="1.8" rx="1.5" fill="#000" opacity="0.88"/><rect x="282.8" y="72.5" width="81.9" height="1.1" rx="1.5" fill="#000" opacity="0.80"/><rect x="189.9" y="83.9" width="180.7" height="1.6" rx="1.5" fill="#000" opacity="0.92"/><rect x="1062.1" y="63.2" width="56.7" height="3.0" rx="1.5" fill="#000" opacity="0.88"/><rect x="898.1" y="103.6" width="46.0" height="1.6" rx="1.5" fill="#000" opacity="0.72"/><rect x="1290.0" y="119.3" width="28.6" height="1.3" rx="1.5" fill="#000" opacity="0.54"/><rect x="799.4" y="56.5" width="14.9" height="1.1" rx="1.5" fill="#000" opacity="0.92"/><rect x="1252.1" y="106.7" width="13.9" height="2.4" rx="1.5" fill="#000" opacity="0.58"/><rect x="872.5" y="55.7" width="118.8" height="1.5" rx="1.5" fill="#000" opacity="0.91"/><rect x="73.5" y="130.1" width="78.0" height="1.2" rx="1.5" fill="#000" opacity="0.47"/><rect x="927.4" y="78.4" width="167.9" height="2.7" rx="1.5" fill="#000" opacity="0.92"/><rect x="1211.7" y="53.0" width="34.1" height="2.8" rx="1.5" fill="#000" opacity="0.92"/><rect x="-17.8" y="84.6" width="140.6" height="2.2" rx="1.5" fill="#000" opacity="0.89"/><rect x="206.9" y="118.1" width="32.0" height="1.6" rx="1.5" fill="#000" opacity="0.51"/><rect x="108.8" y="123.6" width="44.1" height="1.2" rx="1.5" fill="#000" opacity="0.47"/><rect x="929.9" y="62.9" width="40.0" height="1.3" rx="1.5" fill="#000" opacity="0.83"/><rect x="632.8" y="65.1" width="100.5" height="3.2" rx="1.5" fill="#000" opacity="0.80"/><rect x="700.9" y="80.7" width="105.4" height="3.2" rx="1.5" fill="#000" opacity="0.91"/></mask></defs><path d="M-30,400 L-30,88.2 L-30,88.2 L-25,89.5 L-20,88.5 L-15,89.9 L-10,84.8 L-5,87.7 L0,90.8 L5,89.2 L10,90.9 L15,86.3 L20,88.6 L25,87.4 L30,89.3 L35,89.5 L40,86.2 L45,87.4 L50,87.8 L55,91.6 L60,90.7 L65,87.0 L70,90.7 L75,86.7 L80,89.4 L85,86.3 L90,85.4 L95,90.5 L100,86.3 L105,86.2 L110,90.6 L115,89.7 L120,85.9 L125,89.7 L130,86.9 L135,87.5 L140,84.4 L145,88.5 L150,86.7 L155,88.1 L160,87.4 L165,83.5 L170,83.6 L175,82.1 L180,81.7 L185,80.9 L190,82.0 L195,83.5 L200,79.6 L205,83.4 L210,81.1 L215,80.6 L220,83.4 L225,81.1 L230,79.9 L235,80.6 L240,81.7 L245,77.6 L250,82.9 L255,77.0 L260,81.2 L265,81.6 L270,76.5 L275,80.9 L280,78.3 L285,79.4 L290,75.9 L295,76.0 L300,76.8 L305,81.4 L310,76.8 L315,80.1 L320,81.1 L325,81.2 L330,77.6 L335,77.7 L340,78.8 L345,80.3 L350,76.4 L355,80.3 L360,80.7 L365,81.2 L370,76.4 L375,82.0 L380,77.0 L385,78.6 L390,80.4 L395,82.4 L400,79.1 L405,82.8 L410,80.7 L415,79.5 L420,79.7 L425,79.1 L430,78.7 L435,79.3 L440,82.8 L445,84.8 L450,80.0 L455,79.5 L460,85.3 L465,82.8 L470,82.2 L475,81.4 L480,83.7 L485,85.2 L490,83.2 L495,83.1 L500,81.0 L505,86.3 L510,81.1 L515,84.0 L520,86.1 L525,81.9 L530,85.6 L535,86.9 L540,85.0 L545,85.9 L550,81.8 L555,83.7 L560,82.0 L565,86.0 L570,82.6 L575,83.5 L580,86.6 L585,85.5 L590,86.1 L595,82.8 L600,82.7 L605,83.9 L610,82.2 L615,80.7 L620,81.1 L625,79.2 L630,80.2 L635,83.5 L640,83.0 L645,80.6 L650,79.4 L655,78.0 L660,76.0 L665,76.6 L670,79.2 L675,79.2 L680,75.6 L685,77.6 L690,77.0 L695,75.9 L700,75.2 L705,75.2 L710,72.2 L715,73.6 L720,70.5 L725,71.1 L730,72.2 L735,71.1 L740,68.1 L745,71.3 L750,68.9 L755,67.9 L760,63.8 L765,66.4 L770,64.0 L775,65.9 L780,64.1 L785,65.6 L790,64.0 L795,64.3 L800,61.0 L805,62.2 L810,62.2 L815,62.2 L820,58.8 L825,61.2 L830,60.9 L835,59.3 L840,60.6 L845,60.0 L850,56.9 L855,56.6 L860,54.0 L865,57.7 L870,57.9 L875,54.8 L880,55.8 L885,55.7 L890,55.5 L895,51.9 L900,55.3 L905,53.9 L910,54.2 L915,52.6 L920,53.6 L925,54.4 L930,53.5 L935,53.9 L940,49.7 L945,50.5 L950,52.2 L955,53.4 L960,50.9 L965,53.7 L970,53.4 L975,50.0 L980,52.7 L985,51.3 L990,50.4 L995,51.0 L1000,52.3 L1005,51.6 L1010,51.9 L1015,51.1 L1020,53.9 L1025,53.6 L1030,55.3 L1035,55.4 L1040,53.5 L1045,57.7 L1050,52.6 L1055,55.2 L1060,54.7 L1065,55.8 L1070,54.3 L1075,58.8 L1080,56.4 L1085,54.6 L1090,58.3 L1095,55.5 L1100,58.4 L1105,57.4 L1110,59.1 L1115,61.6 L1120,61.0 L1125,58.8 L1130,61.4 L1135,60.5 L1140,59.1 L1145,57.9 L1150,60.8 L1155,60.7 L1160,63.2 L1165,63.4 L1170,61.3 L1175,59.9 L1180,63.2 L1185,57.9 L1190,58.6 L1195,61.4 L1200,61.7 L1205,58.9 L1210,61.8 L1215,63.3 L1220,60.2 L1225,60.5 L1230,59.2 L1235,59.5 L1240,63.5 L1245,59.8 L1250,63.2 L1255,62.8 L1260,60.7 L1265,58.5 L1270,62.7 L1275,59.6 L1280,58.9 L1285,58.2 L1290,61.9 L1295,58.8 L1300,57.3 L1305,58.2 L1310,55.9 L1315,58.7 L1320,57.4 L1325,56.2 L1330,58.9 L1335,58.9 L1340,53.8 L1345,56.7 L1350,54.9 L1355,58.7 L1360,57.5 L1365,54.1 L1370,54.0 L1375,53.2 L1380,58.0 L1385,53.6 L1390,55.3 L1395,54.4 L1400,55.3 L1405,54.9 L1410,55.6 L1415,51.7 L1420,55.5 L1425,52.7 L1430,54.0 L1435,52.8 L1440,52.6 L1445,54.0 L1450,53.6 L1455,53.0 L1460,55.4 L1465,54.5 L1470,51.3 L1470,400 Z" fill="#0d0f14" mask="url(#statsBrushMask)"/><path fill="#0d0f14" d="M-13.4,87.5 L-12.0,87.5 L-14.3,78.7 Z"/><path fill="#0d0f14" d="M-8.4,87.8 L-6.4,87.8 L-6.8,71.6 Z"/><path fill="#0d0f14" d="M0.8,88.2 L2.0,88.2 L1.9,82.8 Z"/><path fill="#0d0f14" d="M26.8,89.0 L28.0,89.0 L25.7,83.6 Z"/><path fill="#0d0f14" d="M34.2,89.1 L35.7,89.1 L33.7,76.1 Z"/><path fill="#0d0f14" d="M55.8,89.1 L57.7,89.1 L55.9,85.9 Z"/><path fill="#0d0f14" d="M75.3,88.8 L77.2,88.8 L74.6,85.0 Z"/><path fill="#0d0f14" d="M90.5,88.4 L92.2,88.4 L90.2,78.6 Z"/><path fill="#0d0f14" d="M111.8,87.6 L113.1,87.6 L110.7,80.9 Z"/><path fill="#0d0f14" d="M120.2,87.2 L122.1,87.2 L121.1,77.7 Z"/><path fill="#0d0f14" d="M131.2,86.6 L132.4,86.6 L130.6,79.4 Z"/><path fill="#0d0f14" d="M147.5,85.7 L149.5,85.7 L149.9,79.6 Z"/><path fill="#0d0f14" d="M162.5,84.8 L163.7,84.8 L164.1,76.8 Z"/><path fill="#0d0f14" d="M175.2,84.1 L176.7,84.1 L175.3,57.3 Z"/><path fill="#0d0f14" d="M183.1,83.5 L185.6,83.5 L182.9,77.6 Z"/><path fill="#0d0f14" d="M198.1,82.7 L200.5,82.7 L199.9,65.7 Z"/><path fill="#0d0f14" d="M211.7,81.9 L213.8,81.9 L213.2,75.4 Z"/><path fill="#0d0f14" d="M219.6,81.5 L221.9,81.5 L221.8,78.5 Z"/><path fill="#0d0f14" d="M228.3,81.0 L229.5,81.0 L227.7,74.7 Z"/><path fill="#0d0f14" d="M249.5,80.1 L251.0,80.1 L248.3,75.5 Z"/><path fill="#0d0f14" d="M270.4,79.3 L272.4,79.3 L272.4,73.7 Z"/><path fill="#0d0f14" d="M281.4,79.0 L282.5,79.0 L280.0,75.0 Z"/><path fill="#0d0f14" d="M288.6,78.9 L290.9,78.9 L289.7,72.8 Z"/><path fill="#0d0f14" d="M295.4,78.7 L297.4,78.7 L297.7,70.4 Z"/><path fill="#0d0f14" d="M324.2,78.5 L325.3,78.5 L324.2,73.2 Z"/><path fill="#0d0f14" d="M328.5,78.6 L329.9,78.6 L330.1,72.6 Z"/><path fill="#0d0f14" d="M334.1,78.6 L336.2,78.6 L334.0,52.3 Z"/><path fill="#0d0f14" d="M340.3,78.6 L342.0,78.6 L342.2,75.5 Z"/><path fill="#0d0f14" d="M371.2,79.2 L373.6,79.2 L373.2,71.6 Z"/><path fill="#0d0f14" d="M377.5,79.4 L379.6,79.4 L379.7,74.6 Z"/><path fill="#0d0f14" d="M390.9,79.8 L392.5,79.8 L390.3,72.6 Z"/><path fill="#0d0f14" d="M396.6,80.0 L397.8,80.0 L395.2,74.0 Z"/><path fill="#0d0f14" d="M411.5,80.5 L412.7,80.5 L410.1,67.3 Z"/><path fill="#0d0f14" d="M422.9,81.0 L425.4,81.0 L424.6,74.8 Z"/><path fill="#0d0f14" d="M429.7,81.3 L432.0,81.3 L429.8,75.2 Z"/><path fill="#0d0f14" d="M452.0,82.1 L453.5,82.1 L454.2,76.3 Z"/><path fill="#0d0f14" d="M459.7,82.4 L461.6,82.4 L459.0,78.6 Z"/><path fill="#0d0f14" d="M474.2,83.0 L475.9,83.0 L473.6,76.7 Z"/><path fill="#0d0f14" d="M479.7,83.1 L481.1,83.1 L479.6,75.4 Z"/><path fill="#0d0f14" d="M484.3,83.3 L485.5,83.3 L484.3,66.6 Z"/><path fill="#0d0f14" d="M492.6,83.5 L494.7,83.5 L493.5,79.1 Z"/><path fill="#0d0f14" d="M513.1,84.0 L515.5,84.0 L514.3,79.1 Z"/><path fill="#0d0f14" d="M540.7,84.2 L542.4,84.2 L543.1,80.3 Z"/><path fill="#0d0f14" d="M546.5,84.2 L547.8,84.2 L546.9,77.1 Z"/><path fill="#0d0f14" d="M553.6,84.1 L556.0,84.1 L553.1,75.8 Z"/><path fill="#0d0f14" d="M567.7,83.9 L569.8,83.9 L568.8,78.6 Z"/><path fill="#0d0f14" d="M588.5,83.3 L589.6,83.3 L590.6,75.9 Z"/><path fill="#0d0f14" d="M617.7,81.8 L619.4,81.8 L617.7,73.7 Z"/><path fill="#0d0f14" d="M622.7,81.4 L624.1,81.4 L623.9,63.0 Z"/><path fill="#0d0f14" d="M634.8,80.5 L636.9,80.5 L634.8,71.8 Z"/><path fill="#0d0f14" d="M656.1,78.8 L657.4,78.8 L658.5,71.5 Z"/><path fill="#0d0f14" d="M660.5,78.4 L661.5,78.4 L659.9,71.7 Z"/><path fill="#0d0f14" d="M674.4,77.0 L675.7,77.0 L677.0,73.1 Z"/><path fill="#0d0f14" d="M679.3,76.4 L681.9,76.4 L681.6,72.6 Z"/><path fill="#0d0f14" d="M696.6,74.5 L697.7,74.5 L695.8,69.6 Z"/><path fill="#0d0f14" d="M703.6,73.6 L705.9,73.6 L706.1,68.5 Z"/><path fill="#0d0f14" d="M731.7,70.3 L732.9,70.3 L730.6,64.1 Z"/><path fill="#0d0f14" d="M736.3,69.6 L738.7,69.6 L738.5,49.8 Z"/><path fill="#0d0f14" d="M743.5,68.7 L745.5,68.7 L745.9,63.5 Z"/><path fill="#0d0f14" d="M751.4,67.7 L753.4,67.7 L751.3,64.7 Z"/><path fill="#0d0f14" d="M755.4,67.2 L757.5,67.2 L756.8,62.8 Z"/><path fill="#0d0f14" d="M796.4,62.3 L797.6,62.3 L797.9,55.4 Z"/><path fill="#0d0f14" d="M802.0,61.6 L803.5,61.6 L803.0,52.7 Z"/><path fill="#0d0f14" d="M814.3,60.2 L816.3,60.2 L813.8,53.0 Z"/><path fill="#0d0f14" d="M825.6,59.0 L827.4,59.0 L825.7,46.7 Z"/><path fill="#0d0f14" d="M829.4,58.6 L831.9,58.6 L829.0,52.8 Z"/><path fill="#0d0f14" d="M842.3,57.4 L844.8,57.4 L843.3,52.4 Z"/><path fill="#0d0f14" d="M847.8,56.9 L849.9,56.9 L849.7,52.9 Z"/><path fill="#0d0f14" d="M869.4,55.3 L870.9,55.3 L870.9,47.6 Z"/><path fill="#0d0f14" d="M910.6,53.2 L912.4,53.2 L911.6,48.6 Z"/><path fill="#0d0f14" d="M940.0,52.5 L941.2,52.5 L941.7,42.9 Z"/><path fill="#0d0f14" d="M959.3,52.5 L961.8,52.5 L961.8,44.6 Z"/><path fill="#0d0f14" d="M967.4,52.6 L969.9,52.6 L969.7,43.2 Z"/><path fill="#0d0f14" d="M1001.7,53.5 L1002.8,53.5 L1004.1,46.5 Z"/><path fill="#0d0f14" d="M1006.6,53.7 L1009.1,53.7 L1006.9,49.3 Z"/><path fill="#0d0f14" d="M1031.3,54.7 L1032.3,54.7 L1030.2,49.1 Z"/><path fill="#0d0f14" d="M1035.7,54.9 L1037.3,54.9 L1035.5,45.3 Z"/><path fill="#0d0f14" d="M1047.7,55.5 L1049.0,55.5 L1049.5,50.6 Z"/><path fill="#0d0f14" d="M1051.7,55.7 L1054.1,55.7 L1052.2,48.9 Z"/><path fill="#0d0f14" d="M1061.1,56.2 L1062.1,56.2 L1060.7,37.4 Z"/><path fill="#0d0f14" d="M1081.1,57.2 L1083.5,57.2 L1080.9,47.9 Z"/><path fill="#0d0f14" d="M1095.9,58.0 L1097.6,58.0 L1096.0,51.3 Z"/><path fill="#0d0f14" d="M1104.8,58.4 L1106.2,58.4 L1105.2,50.0 Z"/><path fill="#0d0f14" d="M1109.1,58.6 L1110.9,58.6 L1110.7,36.7 Z"/><path fill="#0d0f14" d="M1122.4,59.2 L1124.0,59.2 L1121.2,55.4 Z"/><path fill="#0d0f14" d="M1129.7,59.5 L1131.5,59.5 L1129.4,54.3 Z"/><path fill="#0d0f14" d="M1137.6,59.8 L1140.0,59.8 L1139.1,56.2 Z"/><path fill="#0d0f14" d="M1160.8,60.5 L1162.1,60.5 L1160.4,53.3 Z"/><path fill="#0d0f14" d="M1169.8,60.7 L1171.6,60.7 L1171.8,34.3 Z"/><path fill="#0d0f14" d="M1182.4,60.9 L1185.0,60.9 L1183.0,44.2 Z"/><path fill="#0d0f14" d="M1204.3,61.0 L1206.4,61.0 L1203.5,51.7 Z"/><path fill="#0d0f14" d="M1210.2,61.0 L1212.0,61.0 L1210.6,56.4 Z"/><path fill="#0d0f14" d="M1215.3,61.0 L1217.5,61.0 L1218.1,39.4 Z"/><path fill="#0d0f14" d="M1224.0,60.9 L1226.0,60.9 L1224.9,52.6 Z"/><path fill="#0d0f14" d="M1232.1,60.8 L1233.2,60.8 L1230.8,56.2 Z"/><path fill="#0d0f14" d="M1246.3,60.5 L1248.0,60.5 L1245.8,52.0 Z"/><path fill="#0d0f14" d="M1259.0,60.1 L1260.6,60.1 L1259.0,52.7 Z"/><path fill="#0d0f14" d="M1270.6,59.7 L1273.1,59.7 L1271.6,53.4 Z"/><path fill="#0d0f14" d="M1298.8,58.6 L1300.9,58.6 L1299.1,55.5 Z"/><path fill="#0d0f14" d="M1304.3,58.4 L1305.9,58.4 L1304.8,50.7 Z"/><path fill="#0d0f14" d="M1319.0,57.7 L1320.9,57.7 L1320.5,42.8 Z"/><path fill="#0d0f14" d="M1349.0,56.3 L1351.6,56.3 L1350.9,51.0 Z"/><path fill="#0d0f14" d="M1362.9,55.7 L1364.9,55.7 L1364.3,51.9 Z"/><path fill="#0d0f14" d="M1386.4,54.8 L1388.7,54.8 L1387.8,49.2 Z"/><path fill="#0d0f14" d="M1411.6,54.1 L1413.2,54.1 L1410.9,46.0 Z"/><path fill="#0d0f14" d="M1427.6,53.8 L1429.0,53.8 L1429.0,45.5 Z"/><path fill="#0d0f14" d="M1434.7,53.8 L1436.9,53.8 L1436.1,46.7 Z"/><path fill="#0d0f14" d="M1443.7,53.8 L1445.7,53.8 L1443.9,47.7 Z"/></svg>
+  <div class="container stats-grid">
+    <div class="stat-card">
+      <div class="stat-top">
+        <span class="stat-num">4.8</span>
+        <span class="stat-stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+        </span>
+      </div>
+      <span class="stat-label">160+ Google reviews</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">24/7</span>
+      <span class="stat-label">Key-fob gym access</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">5</span>
+      <span class="stat-label">Expert coaches on staff</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">0</span>
+      <span class="stat-label">Contracts — month to month</span>
+    </div>
   </div>
-  <div class="sp-media"><img src="/assets/gallery/g11.jpg" alt="Renegade training floor"><span class="sp-tag">The Floor</span></div>
-</section>
-<section class="statband">
-  <div class="cell"><b>24<span class="u">/7</span></b><span>Open Every Day</span></div>
-  <div class="cell"><b>4.8<span class="u">&#9733;</span></b><span>Google Rating</span></div>
-  <div class="cell"><b>5</b><span>Expert Coaches</span></div>
-  <div class="cell"><b>$0</b><span>Contracts</span></div>
-</section>
-<section id="gallery" class="bg-grey2">
-  <div class="gallery-head reveal">
-    <div><span class="kicker">The Facility</span><h2>Step Inside Renegade.</h2></div>
-    <p style="max-width:34ch;color:var(--tx-mut)">Turf sprint track, dedicated spin room, rows of racks, machines, and free weights &mdash; kept spotless.</p>
-  </div>
-  <div class="gallery-grid"><a href="/assets/gallery/g1.jpg" class="g-a"><img src="/assets/gallery/g1.jpg" alt="Inside Renegade Fitness" loading="lazy"></a><a href="/assets/gallery/g13.jpg" class="g-b"><img src="/assets/gallery/g13.jpg" alt="Inside Renegade Fitness" loading="lazy"></a><a href="/assets/gallery/g11.jpg" class="g-d"><img src="/assets/gallery/g11.jpg" alt="Inside Renegade Fitness" loading="lazy"></a><a href="/assets/gallery/g16.jpg" class="g-c"><img src="/assets/gallery/g16.jpg" alt="Inside Renegade Fitness" loading="lazy"></a><a href="/assets/gallery/g10.jpg" class="g-b"><img src="/assets/gallery/g10.jpg" alt="Inside Renegade Fitness" loading="lazy"></a><a href="/assets/gallery/g20.jpg" class="g-d"><img src="/assets/gallery/g20.jpg" alt="Inside Renegade Fitness" loading="lazy"></a><a href="/assets/gallery/g6.jpg" class="g-d"><img src="/assets/gallery/g6.jpg" alt="Inside Renegade Fitness" loading="lazy"></a><a href="/assets/gallery/g15.jpg" class="g-b"><img src="/assets/gallery/g15.jpg" alt="Inside Renegade Fitness" loading="lazy"></a><a href="/assets/gallery/g3.jpg" class="g-c"><img src="/assets/gallery/g3.jpg" alt="Inside Renegade Fitness" loading="lazy"></a><a href="/assets/gallery/g21.jpg" class="g-a"><img src="/assets/gallery/g21.jpg" alt="Inside Renegade Fitness" loading="lazy"></a></div>
-</section>
-<section class="bg-char" style="padding-top:4.5rem">
-  <div style="padding:0 var(--pad) 2.5rem;max-width:var(--maxw);margin:0 auto" class="reveal">
-    <span class="kicker">The Team</span>
-    <h2 class="disp" style="font-size:clamp(2.4rem,5vw,4.4rem);color:#fff;margin-top:1rem">Coaches In Your Corner.</h2>
-  </div>
-  <div class="team-strip"><div class="team-tile"><img src="/assets/team/alex.jpg" alt="Alex Abel" loading="lazy" onerror="this.style.display='none'"><div class="team-cap"><span>General Manager</span><h3>Alex Abel</h3></div></div><div class="team-tile"><img src="/assets/team/tony.jpg" alt="Tony Costello" loading="lazy" onerror="this.style.display='none'"><div class="team-cap"><span>Trainer &amp; Nutrition</span><h3>Tony Costello</h3></div></div><div class="team-tile"><img src="/assets/team/alyssa.jpg" alt="Alyssa Wagner" loading="lazy" onerror="this.style.display='none'"><div class="team-cap"><span>Personal Trainer</span><h3>Alyssa Wagner</h3></div></div><div class="team-tile"><img src="/assets/team/samantha.jpg" alt="Samantha Solimini" loading="lazy" onerror="this.style.display='none'"><div class="team-cap"><span>Trainer &amp; Group</span><h3>Samantha Solimini</h3></div></div><div class="team-tile"><img src="/assets/team/mary.jpg" alt="Mary Boyer" loading="lazy" onerror="this.style.display='none'"><div class="team-cap"><span>Master Trainer</span><h3>Mary Boyer</h3></div></div></div>
-  <div style="text-align:center;padding:2.5rem var(--pad) 0"><a href="/about" class="btn btn-primary">Meet Every Coach <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
-</section>
-<section class="split  bg-navy ">
-  <div class="sp-content on-dark"><span class="kicker">Member Reviews</span>
-      <h2 class="lead">Rated 4.8&#9733;<br>On <span class="hl">Google.</span></h2>
-      <div class="review-list" style="margin-top:2rem"><div class="review-item"><div class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><p>&ldquo;Clean, professional, well run, well maintained! The manager (Alex) makes everyone feel welcome!&rdquo;</p><cite>Michael<span> &mdash; Google Review</span></cite></div><div class="review-item"><div class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><p>&ldquo;One of the best and cleanest gyms in the Lake County area! The staff are really nice as well.&rdquo;</p><cite>Mykyta Prodan<span> &mdash; Google Review</span></cite></div><div class="review-item"><div class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><p>&ldquo;I&rsquo;ve been training with Alyssa for over a year now and couldn&rsquo;t be happier. She&rsquo;s incredibly engaging, encouraging, and genuinely invested in helping me hit my goals.&rdquo;</p><cite>AJ B.<span> &mdash; Google Review</span></cite></div></div></div>
-  <div class="sp-media"><img src="/assets/gallery/g20.jpg" alt="Renegade members" loading="lazy"><span class="sp-tag">160+ Reviews</span></div>
-</section>
-<section class="locate">
-  <div class="locate-info">
-    <span class="kicker">Find Us</span>
-    <h2 class="disp" style="font-size:clamp(2.2rem,3.8vw,3.6rem);color:#fff;margin:1.1rem 0 1.5rem">Train In Wauconda.</h2>
-    <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div><b>Location</b><span>1120 N US Hwy 12, Wauconda, IL 60084</span></div></div>
-    <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div><b>Hours</b><span>Open 24/7 &middot; Staffed Mon&ndash;Thu 8a&ndash;8p, Fri 8a&ndash;7p, Sat 8a&ndash;2p, Sun 8a&ndash;12p</span></div></div>
-    <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><div><b>Call</b><span><a href="tel:8474698139" style="color:#fff">(847) 469-8139</a></span></div></div>
-    <a href="https://www.google.com/maps/dir/?api=1&destination=1120+N+US+Hwy+12+Wauconda+IL+60084" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:1.75rem;align-self:flex-start">Get Directions <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-  </div>
-  <div class="locate-map"><iframe title="Renegade Fitness location" src="https://maps.google.com/maps?q=1120+N+US+Hwy+12,+Wauconda,+IL+60084&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
-</section>
-<section class="social-band">
-  <a href="https://www.instagram.com/_renegadefitnessllcwauconda_/" target="_blank" rel="noopener" class="social-cell"><span class="social-ico ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span><span><b>Instagram</b><span>@_renegadefitnessllcwauconda_</span></span></a>
-  <a href="https://www.facebook.com/p/Renegade-Fitness-LLC-100063784830945/" target="_blank" rel="noopener" class="social-cell"><span class="social-ico fb"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></span><span><b>Facebook</b><span>Renegade Fitness LLC</span></span></a>
-  <a href="tel:8474698139" class="social-cell"><span class="social-ico ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><span><b>Call Us</b><span>(847) 469-8139</span></span></a>
-</section>
-<section class="cta-block">
-  <div class="cta-bg"><img src="/assets/hero-bg.jpg" alt=""></div>
-  <div class="in-w reveal">
-    <h2>Change Your Life.<br>Start Today.</h2>
-    <p>No contract. No pressure. A clean, fully-equipped gym and coaches who actually care. Come see the difference.</p>
-    <div class="sp-actions"><a href="/membership" class="btn btn-navy btn-lg">Become a Member <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a><a href="/contact" class="btn btn-ghost btn-lg">Book a Tour</a></div>
-  </div>
-</section>
-<footer class="footer"><div class="footer-in">
-  <div class="footer-grid">
+</div>
+
+<!-- ============ why ============ -->
+<section class="why" id="why">
+  <div class="container why-grid">
     <div>
-      <a href="/" class="brand"><img src="/assets/logo.png" alt="Renegade Fitness" style="height:48px"></a>
-      <p class="footer-about">Wauconda&rsquo;s 24/7, no-contract fitness center. State-of-the-art equipment, certified coaches, and a community that shows up.</p>
-      <div class="footer-social"><a href="https://www.instagram.com/_renegadefitnessllcwauconda_/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a><a href="https://www.facebook.com/p/Renegade-Fitness-LLC-100063784830945/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></div>
+      <span class="eyebrow">Why Renegade</span>
+      <h2>A serious gym that still feels like a community.</h2>
+      <p class="why-intro">Members call it one of the cleanest gyms in Lake County — and the staff know your name. Whether it's your first session or a competition prep, you'll find the equipment, coaching, and atmosphere to make progress stick.</p>
+      <ul class="checklist">
+        <li>
+          <span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <div><strong>Open 24/7 with secure key-fob entry</strong><p>Early mornings, late nights, holidays — the gym works around your life.</p></div>
+        </li>
+        <li>
+          <span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <div><strong>Clean, well-maintained equipment</strong><p>Free weights, cables, plate-loaded rigs, a cardio floor, and a turf sprint track.</p></div>
+        </li>
+        <li>
+          <span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <div><strong>Coaching for every level</strong><p>Five coaches covering strength, nutrition, group training, and specialty programs.</p></div>
+        </li>
+        <li>
+          <span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <div><strong>No contracts, ever</strong><p>Month-to-month memberships. Stay because you love it, not because you're locked in.</p></div>
+        </li>
+      </ul>
     </div>
-    <div><h4>Explore</h4><div class="footer-links"><a href="/">Home</a><a href="/about">About &amp; Team</a><a href="/services">Services</a><a href="/membership">Membership</a><a href="/#gallery">Gallery</a><a href="/contact">Contact</a></div></div>
-    <div><h4>Hours</h4><div class="footer-links"><a style="cursor:default;color:#fff;font-weight:700">Gym: Open 24/7</a><a style="cursor:default">Staffed Mon&ndash;Thu 8a&ndash;8p</a><a style="cursor:default">Fri 8a&ndash;7p &middot; Sat 8a&ndash;2p</a><a style="cursor:default">Sun 8a&ndash;12p</a></div></div>
-    <div><h4>Visit</h4><div class="footer-contact"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>1120 N US Hwy 12, Wauconda, IL 60084</span></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:8474698139">(847) 469-8139</a></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg><a href="mailto:office@getfitatrenegade.com">office@getfitatrenegade.com</a></div></div></div>
+    <div class="why-media">
+      <div class="frame wide"><img src="/assets/gallery/g3.jpg" alt="The main training floor at Renegade Fitness"></div>
+      <div class="frame"><img src="/assets/gallery/g20.jpg" alt="Coach working with a member on the bench"></div>
+      <div class="frame"><img src="/assets/gallery/g11.jpg" alt="Member on the lat pulldown machine"></div>
+    </div>
   </div>
-  <div class="footer-bottom"><span>&copy; 2026 Renegade Fitness LLC. All rights reserved.</span><span>Wauconda, IL &middot; Serving Lake County</span></div>
-</div></footer>
+</section>
+
+<!-- ============ services ============ -->
+<section id="services">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">What We Offer</span>
+      <h2>Everything you need under one roof</h2>
+      <p>From open-floor training to one-on-one coaching, every membership starts with full access to the facility.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+        <h3>24/7 Gym Access</h3>
+        <p>Free weights, cables, plate-loaded rigs, a full cardio floor, and a turf sprint track — open whenever you are.</p>
+      </div>
+      <div class="service-card">
+        <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="7" width="3.4" height="10" rx="1"/><rect x="16.1" y="7" width="3.4" height="10" rx="1"/><line x1="7.9" y1="12" x2="16.1" y2="12"/><line x1="2" y1="9.8" x2="2" y2="14.2"/><line x1="22" y1="9.8" x2="22" y2="14.2"/></svg></span>
+        <h3>Personal Training</h3>
+        <p>One-on-one sessions with a custom plan built around your goals, your schedule, and your experience level.</p>
+      </div>
+      <div class="service-card">
+        <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <h3>Group Fitness Classes</h3>
+        <p>Coach-led group workouts that keep you consistent — and make training something you look forward to.</p>
+      </div>
+      <div class="service-card">
+        <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
+        <h3>Spin &amp; Cardio</h3>
+        <p>A dedicated spin room plus a full cardio floor to build your engine on your own schedule.</p>
+      </div>
+      <div class="service-card">
+        <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><polyline points="9 13 11 15 15 11"/></svg></span>
+        <h3>Nutrition Coaching</h3>
+        <p>NASM-certified nutrition coaching (CNC) built for real life — sustainable habits, not crash diets.</p>
+      </div>
+      <div class="service-card">
+        <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
+        <h3>Specialty Coaching</h3>
+        <p>Physique &amp; bodybuilding prep, 40+/senior strength, pre/postnatal, corrective exercise, and weight loss.</p>
+      </div>
+    </div>
+    <div class="mid-cta">
+      <p>Every membership is month to month — no contracts, no games.</p>
+      <a class="btn btn-primary" href="/membership">View Memberships
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ gallery ============ -->
+<section id="gallery" class="flush-top">
+  <div class="container">
+    <div class="split-head">
+      <div class="section-head">
+        <span class="eyebrow">The Facility</span>
+        <h2>Take a look around</h2>
+        <p>Bright, clean, and built for training — see it in person any staffed hour.</p>
+      </div>
+      <a class="btn btn-secondary" href="/gallery">View Full Gallery
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+    <div class="gallery-grid">
+      <figure class="frame"><a href="/assets/gallery/g13.jpg"><img src="/assets/gallery/g13.jpg" alt="Core work on the blue turf track"></a><figcaption>Turf Track</figcaption></figure>
+      <figure class="frame"><a href="/assets/gallery/g1.jpg"><img src="/assets/gallery/g1.jpg" alt="Member pressing on a bench station"></a><figcaption>Free Weights</figcaption></figure>
+      <figure class="frame"><a href="/assets/gallery/g15.jpg"><img src="/assets/gallery/g15.jpg" alt="Cardio floor with treadmills"></a><figcaption>Cardio Floor</figcaption></figure>
+      <figure class="frame"><a href="/assets/gallery/g6.jpg"><img src="/assets/gallery/g6.jpg" alt="Member benching with a spotter"></a><figcaption>Bench Press</figcaption></figure>
+      <figure class="frame"><a href="/assets/gallery/g10.jpg"><img src="/assets/gallery/g10.jpg" alt="Lat pulldown on the cable machines"></a><figcaption>Cable Machines</figcaption></figure>
+      <figure class="frame"><a href="/assets/gallery/g16.jpg"><img src="/assets/gallery/g16.jpg" alt="Member curling on a strength machine"></a><figcaption>Strength Machines</figcaption></figure>
+      <figure class="frame"><a href="/assets/gallery/spin-room.jpg"><img src="/assets/gallery/spin-room.jpg" alt="The dedicated spin room"></a><figcaption>Spin Room</figcaption></figure>
+      <figure class="frame"><a href="/assets/gallery/g21.jpg"><img src="/assets/gallery/g21.jpg" alt="Member on a plate-loaded press"></a><figcaption>Plate-Loaded Rigs</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ team ============ -->
+<section id="coaches" class="flush-top">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">The Team</span>
+      <h2>Five coaches. One goal: your progress.</h2>
+      <p>Strength, nutrition, group training, and specialty programs — covered by people who know your name.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-photo zoom"><img src="/assets/team/alex.jpg" alt="Alex Abel, General Manager"></div>
+        <div class="team-meta"><strong>Alex Abel</strong><span>General Manager</span><small>Member experience &amp; front desk</small></div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="/assets/team/tony.jpg" alt="Tony Costello, Trainer and Nutrition Coach"></div>
+        <div class="team-meta"><strong>Tony Costello</strong><span>Trainer &amp; Nutrition</span><small>NASM CPT &amp; CNC · physique prep</small></div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo pos-10"><img src="/assets/team/alyssa.jpg" alt="Alyssa Wagner, Personal Trainer"></div>
+        <div class="team-meta"><strong>Alyssa Wagner</strong><span>Personal Trainer</span><small>AFAA CPT · strength &amp; weight loss</small></div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo pos-25"><img src="/assets/team/samantha.jpg" alt="Samantha Solimini, Trainer and Group Coach"></div>
+        <div class="team-meta"><strong>Samantha Solimini</strong><span>Trainer &amp; Group</span><small>NASM CPT · nutrition &amp; pre/postnatal</small></div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="/assets/team/mary.jpg" alt="Mary Boyer, Master Trainer"></div>
+        <div class="team-meta"><strong>Mary Boyer</strong><span>Master Trainer</span><small>ISSA Master Trainer · 40+ &amp; seniors</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ reviews ============ -->
+<section id="reviews" class="flush-top">
+  <div class="container">
+    <div class="reviews-grid">
+      <div class="review-summary">
+        <span class="big">4.8</span>
+        <span class="stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+        </span>
+        <p>Rated 4.8 out of 5 by the people who train here.</p>
+        <span class="gbadge">160+ Google Reviews</span>
+      </div>
+      <div class="review-card">
+        <span class="stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+        </span>
+        <blockquote>"Clean, professional, well run, well maintained! The manager (Alex) makes everyone feel welcome!"</blockquote>
+        <cite>Michael <span>Google review</span></cite>
+      </div>
+      <div class="review-card">
+        <span class="stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+        </span>
+        <blockquote>"One of the best and cleanest gyms in the Lake County area! The staff are really nice as well."</blockquote>
+        <cite>Mykyta Prodan <span>Google review</span></cite>
+      </div>
+      <div class="review-card">
+        <span class="stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+        </span>
+        <blockquote>"I've been training with Alyssa for over a year now and couldn't be happier. She's incredibly engaging, encouraging, and genuinely invested in helping me hit my goals."</blockquote>
+        <cite>AJ B. <span>Google review</span></cite>
+      </div>
+    </div>
+    <div class="reviews-more">
+      <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Renegade+Fitness+1120+N+US+Hwy+12+Wauconda+IL" target="_blank" rel="noopener">Read all 160+ reviews on Google
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ prime location ============ -->
+<section id="reach" class="flush-top">
+  <div class="container reach-grid">
+    <div>
+      <span class="eyebrow">Prime Location</span>
+      <h2>Right on Route 12. Minutes from everywhere.</h2>
+      <p class="why-intro">Renegade sits directly on US Route 12 in Wauconda — the artery that ties Lake County together. Most of the county is a 15–20 minute drive, so the gym fits your route instead of the other way around.</p>
+      <ul class="checklist">
+        <li>
+          <span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <div><strong>Easy on, easy off</strong><p>Straight shot down Rte 12 / Rand Rd — no back-road maze to get to a workout.</p></div>
+        </li>
+        <li>
+          <span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <div><strong>Free parking at the door</strong><p>Pull in, park, train — no meters, no garages, no circling the block.</p></div>
+        </li>
+        <li>
+          <span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <div><strong>Open 24/7 for members</strong><p>On your commute, after the kids are down, before sunrise — the door's always open.</p></div>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div class="reach-towns">
+        <div class="town">Island Lake<span>6 min</span></div>
+        <div class="town">Volo<span>8 min</span></div>
+        <div class="town">Lake Zurich<span>12 min</span></div>
+        <div class="town">Mundelein<span>14 min</span></div>
+        <div class="town">Barrington<span>15 min</span></div>
+        <div class="town">Round Lake<span>15 min</span></div>
+        <div class="town">Fox Lake<span>16 min</span></div>
+        <div class="town">McHenry<span>18 min</span></div>
+      </div>
+      <p class="reach-note">Typical drive times along the Rte 12 / Rand Rd corridor.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ location & hours ============ -->
+<section id="visit" class="flush-top">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Location &amp; Hours</span>
+      <h2>Come find us in Wauconda</h2>
+    </div>
+    <div class="loc-grid">
+      <div class="map-card">
+        <div class="map-embed">
+          <iframe src="https://maps.google.com/maps?q=1120+N+US+Hwy+12,+Wauconda,+IL+60084&t=&z=15&ie=UTF8&iwloc=&output=embed" title="Map showing Renegade Fitness at 1120 N US Hwy 12, Wauconda, IL" allowfullscreen></iframe>
+          <a class="map-cta" href="https://www.google.com/maps/dir/?api=1&destination=1120+N+US+Hwy+12+Wauconda+IL+60084" target="_blank" rel="noopener">Get Directions
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="loc-card">
+        <div class="loc-row">
+          <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div>
+            <strong>Address</strong>
+            <p>1120 N US Hwy 12, Wauconda, IL 60084</p>
+          </div>
+        </div>
+        <div class="loc-row">
+          <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <div>
+            <strong>Contact</strong>
+            <p><a href="tel:8474698139">(847) 469-8139</a><br><a href="mailto:office@getfitatrenegade.com">office@getfitatrenegade.com</a></p>
+          </div>
+        </div>
+        <div class="loc-row stretch">
+          <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+          <div class="grow">
+            <strong>Staffed Hours</strong>
+            <table class="hours-table">
+              <tr><td>Mon – Thu</td><td>8:00a – 8:00p</td></tr>
+              <tr><td>Friday</td><td>8:00a – 7:00p</td></tr>
+              <tr><td>Saturday</td><td>8:00a – 2:00p</td></tr>
+              <tr><td>Sunday</td><td>8:00a – 12:00p</td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="hours-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Members train 24/7 with secure key-fob access.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ final CTA ============ -->
+<section class="cta-band">
+  <div class="container cta-inner">
+    <span class="cta-kicker">24/7 · No Contracts · Wauconda, IL</span>
+    <h2 class="cta-title">Change your <span class="hl">life.</span><br>Start today.</h2>
+    <p class="cta-sub">Month to month. No pressure. Just a gym that shows up for you — every single day.</p>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="/membership">Become a Member</a>
+      <a class="btn btn-ghost-dark" href="/contact">Book a Tour</a>
+    </div>
+    <p class="cta-phone">Questions? Call <a href="tel:8474698139">(847) 469-8139</a></p>
+  </div>
+</section>
+
+<!-- ============ footer ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-about">
+        <img class="footer-logo" src="/assets/logo.png" alt="Renegade Fitness">
+        <p>A 24/7 gym in Wauconda, IL with expert coaching, clean equipment, and no contracts. Come as you are — leave stronger.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/_renegadefitnessllcwauconda_" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.facebook.com/p/Renegade-Fitness-LLC-100063784830945/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Home</a></li>
+          <li><a href="/about"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>About</a></li>
+          <li><a href="/services"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="7" width="3.4" height="10" rx="1"/><rect x="16.1" y="7" width="3.4" height="10" rx="1"/><line x1="7.9" y1="12" x2="16.1" y2="12"/><line x1="2" y1="9.8" x2="2" y2="14.2"/><line x1="22" y1="9.8" x2="22" y2="14.2"/></svg>Services</a></li>
+          <li><a href="/membership"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Membership</a></li>
+          <li><a href="/gallery"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>Gallery</a></li>
+          <li><a href="/contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="/services"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>24/7 Gym Access</a></li>
+          <li><a href="/services"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Personal Training</a></li>
+          <li><a href="/services"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Group Fitness</a></li>
+          <li><a href="/services"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>Spin &amp; Cardio</a></li>
+          <li><a href="/services"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><polyline points="9 13 11 15 15 11"/></svg>Nutrition Coaching</a></li>
+          <li><a href="/services"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Specialty Coaching</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit Us</h4>
+        <div class="footer-hours">
+          <div><span>1120 N US Hwy 12</span></div>
+          <div><span>Wauconda, IL 60084</span></div>
+          <div class="fh-gap"><span>Mon – Thu</span><span>8:00a – 8:00p</span></div>
+          <div><span>Friday</span><span>8:00a – 7:00p</span></div>
+          <div><span>Saturday</span><span>8:00a – 2:00p</span></div>
+          <div><span>Sunday</span><span>8:00a – 12:00p</span></div>
+        </div>
+        <div class="footer-247">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Member access 24/7
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Renegade Fitness LLC. All rights reserved.</span>
+      <span class="footer-contact">
+        <a href="tel:8474698139"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(847) 469-8139</a>
+        <a href="mailto:office@getfitatrenegade.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>office@getfitatrenegade.com</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ sticky mobile CTA ============ -->
+<div class="sticky-cta" id="stickyCta">
+  <a class="btn btn-primary" href="/membership">View Memberships</a>
+  <a class="btn btn-secondary" href="tel:8474698139">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call
+  </a>
+</div>
+
+<!-- ============ lightbox ============ -->
 <div class="lightbox" aria-hidden="true">
   <button class="lb-close" aria-label="Close">&times;</button>
   <button class="lb-nav lb-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
-  <img src="" alt="Renegade Fitness gallery">
+  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Renegade Fitness facility photo">
   <button class="lb-nav lb-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
-</div><script src="/site.js"></script>
+</div>
+
 </body>
 </html>

@@ -19,7 +19,8 @@
   --line:rgba(255,255,255,.10);
   --line-soft:rgba(255,255,255,.06);
   --line-strong:rgba(255,255,255,.16);
-  --bg:#131519;            /* char */
+  --bg:#131519;            /* char — base sections */
+  --bg-alt:#1d212a;        /* lifted grey — alternating brushed sections */
   --card:#1b1e25;          /* char-2 panels */
   --card-2:#22262e;        /* lighter surface when separation is needed */
   --amber:#f5a623;         /* stars ONLY */
@@ -73,6 +74,32 @@ a{text-decoration:none;color:inherit}
 .container{max-width:1200px;margin:0 auto;padding:0 24px}
 section{padding:72px 0}
 .flush-top{padding-top:0}
+
+/* ---------- alternating brushed sections ----------
+   Every other content section takes the lifted --bg-alt tone and paints a
+   dry-brush edge above and below itself, so each boundary reads as a stroke
+   that finished right at the seam. The pseudo-elements sit outside the
+   section box (bottom:100% / top:100%) and bleed into the neighbours'
+   padding. Cards inside step up a tone so they still separate from the
+   lighter ground. */
+.brush-section{
+  position:relative;
+  background:var(--bg-alt);
+  --card:#252a33;
+  --card-2:#2d323c;
+  /* the lifted ground costs contrast, so the muted grey and blue accent step
+     up a shade here — keeps every pair at WCAG AA (verified 4.57:1 worst) */
+  --muted:#939ba8;
+  --blue-br:#6d96ff;
+}
+.brush-section::before,.brush-section::after{
+  content:"";position:absolute;left:0;right:0;height:46px;
+  background:url('/assets/brush-edge.svg') 0 0/100% 100% no-repeat;
+  pointer-events:none;
+}
+.brush-section::before{bottom:100%}
+.brush-section::after{top:100%;transform:scaleY(-1)}
+.brush-section>.container{position:relative;z-index:1}
 
 /* ---------- type ---------- */
 h1,h2,h3{color:var(--ink);font-weight:800;letter-spacing:-.02em;line-height:1.15}
@@ -260,19 +287,11 @@ header.nav{
    Hard divider between the photo hero and the page: a slim deep-ink ticker.
    Number + uppercase micro-label sit inline, hairlines between items. */
 .stats{
-  position:relative;
   background:linear-gradient(180deg,#0d0f14 0%,#0a0b0f 100%);
+  border-top:1px solid var(--line-strong);
   border-bottom:1px solid var(--line);
-  /* no top border/inset highlight — the painted brush edge below IS the top edge */
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
 }
-/* dry-brush divider: the strip's top edge, frayed and raked as if the paint
-   stroke finished right at the boundary. Paint colour matches the strip. */
-.stats-brush{
-  position:absolute;left:0;right:0;top:0;width:100%;height:110px;
-  transform:translateY(-50%);
-  display:block;pointer-events:none;z-index:1;overflow:visible;
-}
-.stats .container{position:relative;z-index:2}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
 .stat-card{
   display:flex;align-items:center;gap:14px;
@@ -682,6 +701,7 @@ footer h4{color:#fff;font-size:.8125rem;font-weight:800;letter-spacing:.08em;tex
 }
 @media (max-width:600px){
   section{padding:56px 0}
+  .brush-section::before,.brush-section::after{height:30px}
   .container{padding:0 20px}
   header.nav{top:10px;padding:0 20px;margin-bottom:-58px}
   .nav-inner{height:58px;border-radius:14px}
@@ -726,7 +746,6 @@ footer h4{color:#fff;font-size:.8125rem;font-weight:800;letter-spacing:.08em;tex
   .town{padding:10px 13px;font-size:.8438rem}
   .why-media .frame img{height:150px}
   .why-media .frame.wide img{height:170px}
-  .stats-brush{height:70px}
   .stat-card{padding:11px 0;gap:11px}
   .stat-num{font-size:1.3rem}
   .split-head{flex-direction:column;align-items:flex-start}

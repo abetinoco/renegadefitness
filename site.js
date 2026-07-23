@@ -2,6 +2,28 @@
 (function () {
   'use strict';
 
+  /* ── Scroll reveal ──
+     The hidden state is armed only once JS runs (via .has-js), so the content
+     is never stranded invisible if this script fails or is blocked. */
+  var reveals = document.querySelectorAll('.reveal');
+  if (reveals.length) {
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced || !('IntersectionObserver' in window)) {
+      for (var r = 0; r < reveals.length; r++) reveals[r].classList.add('visible');
+    } else {
+      document.documentElement.classList.add('has-js');
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      for (var i = 0; i < reveals.length; i++) io.observe(reveals[i]);
+    }
+  }
+
   /* ── Mobile nav ── */
   var hamburger = document.querySelector('.hamburger');
   var menu = document.getElementById('mmenu');

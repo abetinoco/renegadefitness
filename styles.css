@@ -404,14 +404,18 @@ header.nav{
    over the darkest part of the gradient. Scoped so the shared .service-card
    (about/membership) stays a flat panel. */
 #services .service-card{
-  position:relative;overflow:hidden;min-height:258px;gap:12px;
+  position:relative;overflow:hidden;min-height:258px;gap:10px;
+  /* photo stays visible up top, then ramps to near-solid over the copy so the
+     title + description read cleanly on any shot */
   background:
-    linear-gradient(178deg,rgba(11,12,16,.55) 0%,rgba(11,12,16,.34) 34%,rgba(9,10,13,.92) 100%),
+    linear-gradient(180deg,rgba(9,10,13,.38) 0%,rgba(9,10,13,.16) 24%,rgba(9,10,13,.72) 56%,rgba(6,7,9,1) 92%,rgba(6,7,9,1) 100%),
     var(--card-img) center/cover no-repeat;
-  border-color:var(--line-strong);color:#fff;
+  /* no light border — it read as a pale strip against the near-black card
+     bottom; the dark-card-on-grey-section contrast defines the edge instead */
+  border:0;color:#fff;
 }
-#services .service-card h3{margin-top:auto;color:#fff}
-#services .service-card p{color:rgba(255,255,255,.82)}
+#services .service-card h3{margin-top:auto;color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.7)}
+#services .service-card p{color:rgba(255,255,255,.9);text-shadow:0 1px 8px rgba(0,0,0,.65)}
 #services .service-card .icon-tile{
   background:rgba(13,16,22,.5);color:var(--blue-br);
   -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);

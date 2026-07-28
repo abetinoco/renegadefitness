@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Internal styling scratch page — not real content.
+Disallow: /paint-test
+
+Sitemap: https://renegadefitness.vercel.app/sitemap.xml

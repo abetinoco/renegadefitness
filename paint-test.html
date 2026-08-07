@@ -1,8 +1,11 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta name="robots" content="noindex, nofollow"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Brush Divider Test</title><link rel="icon" href="/assets/logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800;1,900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Fonts are self-hosted: the Google Fonts origin sat on the render-blocking
+     path, costing a DNS+TCP+TLS handshake before any text could paint. -->
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/barlow-condensed-900-italic-latin.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-400-latin.woff2" crossorigin />
+<link rel="stylesheet" href="/fonts.css" />
 <link rel="stylesheet" href="/styles.css">
 <style>
   .photo{position:relative;min-height:340px;background-image:linear-gradient(180deg,rgba(11,12,16,.35),rgba(11,12,16,.15) 55%,rgba(10,11,13,.5));background-size:cover;background-position:center 40%;display:flex;align-items:center;padding:60px 0}

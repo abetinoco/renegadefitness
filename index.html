@@ -14,9 +14,11 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800;1,900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Fonts are self-hosted: the Google Fonts origin sat on the render-blocking
+     path, costing a DNS+TCP+TLS handshake before any text could paint. -->
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/barlow-condensed-900-italic-latin.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-400-latin.woff2" crossorigin />
+<link rel="stylesheet" href="/fonts.css" />
 <link rel="stylesheet" href="/styles.css">
 <!-- The hero photo is a CSS background, so the browser only finds it after styles.css
      parses. Preloading starts it with the stylesheet instead — it's the LCP element.
